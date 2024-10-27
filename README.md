@@ -108,6 +108,3 @@ This software is licensed under the GNU Affero General Public License v3.0 (AGPL
 ---
 
 Happy building with Hexabot! 🎉
-
-
-Let me know if you'd like to make any adjustments!
