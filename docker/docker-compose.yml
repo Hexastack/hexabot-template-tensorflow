@@ -2,7 +2,7 @@ services:
   api:
     container_name: api
     build:
-      context: ./
+      context: ../
       target: development # or "production"
     env_file: .env
     ports:
@@ -55,42 +55,10 @@ services:
     volumes:
       - mongo-data:/data/db
 
-  nlu-api:
-    container_name: nlu-api
-    image: hexastack/hexabot-nlu:latest
-    env_file: .env
-    networks:
-      - nlu-network
-    healthcheck:
-      test: curl --fail http://localhost:5000/health || exit 1
-      interval: 10s
-      timeout: 10s
-      retries: 5
-      start_period: 10s
-
-  ollama:
-    image: ollama/ollama
-    container_name: ollama
-    volumes:
-      - ollama-data:/root/.ollama
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: all
-    #           capabilities: [gpu]
-    restart: unless-stopped
-    networks:
-      - ollama-network
-
 volumes:
   mongo-data:
   api-data:
-  ollama-data:
 
 networks:
   db-network:
   app-network:
-  nlu-network:
-  ollama-network:
