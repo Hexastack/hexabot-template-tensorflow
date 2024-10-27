@@ -1,8 +1,7 @@
 # Stage 0: Base - Download Hexabot API
-FROM hexabot-base:latest AS base
+FROM hexastack/hexabot-base:latest AS base
 
 WORKDIR /app
-
 
 # Stage 1: Builder - Download and merge Hexabot API with new project dependencies
 FROM node:18-alpine AS builder
