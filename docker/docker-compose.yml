@@ -12,8 +12,8 @@ services:
       - db-network
       - app-network
     volumes:
-      - ./modules:/app/src/extra
-      - ./extensions:/app/src/.hexabot/custom/extensions
+      - ../modules:/app/src/extra
+      - ../extensions:/app/src/.hexabot/custom/extensions
       - api-data:/uploads
     depends_on:
       mongo:
