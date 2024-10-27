@@ -1,0 +1,11 @@
+{
+  "name": "my-hexabot",
+  "version": "1.0.0",
+  "description": "My new Hexabot project",
+  "dependencies": {
+    "hexabot": "^2.0.0",
+    "@nestjs/common": "^10.0.0",
+    "hexabot-helper-ollama": "^2.0.0",
+    "hexabot-plugin-ollama": "^2.0.0"
+  }
+}
