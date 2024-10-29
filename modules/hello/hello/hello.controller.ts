@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { Roles } from 'hexabot/src/utils/decorators/roles.decorator'
+import { Roles } from '@/utils/decorators/roles.decorator'
 
 @Controller('hello')
 export class HelloController {
