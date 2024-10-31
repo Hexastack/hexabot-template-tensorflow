@@ -23,5 +23,5 @@
       "@/*": ["node_modules/hexabot/src/*"]
     }
   },
-  "include": ["modules/**/*.ts", "extensions/**/*.ts"]
+  "include": ["modules/**/*.ts", "extensions/**/*.ts", "node_modules/hexabot/**/*.d.ts"]
 }
