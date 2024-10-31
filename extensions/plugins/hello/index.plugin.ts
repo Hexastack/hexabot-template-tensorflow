@@ -8,15 +8,15 @@
 
 import { Injectable } from '@nestjs/common';
 
-import { Block } from 'hexabot/src/chat/schemas/block.schema';
-import { Context } from 'hexabot/src/chat/schemas/types/context';
+import { Block } from '@/chat/schemas/block.schema';
+import { Context } from '@/chat/schemas/types/context';
 import {
   OutgoingMessageFormat,
   StdOutgoingTextEnvelope,
-} from 'hexabot/src/chat/schemas/types/message';
-import { PluginService } from 'hexabot/src/plugins/plugins.service';
-import { PluginBlockTemplate } from 'hexabot/src/plugins/types';
-import { BaseBlockPlugin } from 'hexabot/src/plugins/base-block-plugin';
+} from '@/chat/schemas/types/message';
+import { PluginService } from '@/plugins/plugins.service';
+import { PluginBlockTemplate } from '@/plugins/types';
+import { BaseBlockPlugin } from '@/plugins/base-block-plugin';
 
 import SETTINGS from './settings';
 
