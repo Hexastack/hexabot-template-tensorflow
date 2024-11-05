@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "typeRoots": ["./node_modules/@types", "./types"],
+    "typeRoots": ["./node_modules/@types"],
     "module": "commonjs",
     "declaration": true,
     "removeComments": true,
@@ -20,7 +20,7 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "paths": {
-      "@/*": ["node_modules/hexabot/src/*"]
+      "@/*": ["node_modules/hexabot/src/*", "modules/*"]
     }
   },
   "include": ["modules/**/*.ts", "extensions/**/*.ts", "node_modules/hexabot/**/*.d.ts"]
