@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "My new Hexabot project",
   "dependencies": {
-    "hexabot": "^2.0.0",
+    "hexabot": "^2.1.5",
     "@nestjs/common": "^10.0.0",
-    "hexabot-helper-ollama": "^2.0.0",
-    "hexabot-plugin-ollama": "^2.0.0"
+    "hexabot-helper-ollama": "^2.1.1",
+    "hexabot-plugin-ollama": "^2.0.3"
   }
 }
