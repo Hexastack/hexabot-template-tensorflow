@@ -30,7 +30,7 @@ Not familiar with [Hexabot](https://hexabot.ai/) ? It's an open-source chatbot /
    To create a new Hexabot project, first install the Hexabot CLI globally:
 
    ```bash
-   npm install -g hexabot
+   npm install -g hexabot-cli
    ```
 
 3. **Create Your Project**:
@@ -41,10 +41,15 @@ Not familiar with [Hexabot](https://hexabot.ai/) ? It's an open-source chatbot /
    ```
 
 4. **Run the Project**:
-   Navigate into the newly created folder and run the following command to start the project:
+   Navigate into the newly created folder and run the following command to start the project in development mode:
 
    ```bash
-   hexabot run
+   hexabot dev
+   ```
+
+   For production mode, you can use:
+   ```bash
+   hexabot start
    ```
 
    *Note*: The first run may take some time as it needs to download all required Docker images.
@@ -79,18 +84,11 @@ This template comes with a pre-configured **Dockerfile** and **docker-compose.ym
 
 For detailed information on how to get started, as well as in-depth user and developer guides, please refer to our full documentation available in the docs folder or visit the [Documentation](https://docs.hexabot.ai).
 
-You can also find specific documentation for different components of the project in the following locations:
-
-- [API Documentation](api/README.md)
-- [UI Documentation](frontend/README.md)
-- [Live Chat Widget Documentation](widget/README.md)
-- [NLU Engine Documentation](nlu/README.md)
-
 ## Contributing
 
 We welcome contributions from the community! Whether you want to report a bug, suggest new features, or submit a pull request, your input is valuable to us.
 
-Please refer to our contribution policy first : [How to contribute to Hexabot](./CONTRIBUTING.md)
+Please refer to our contribution policy first : [How to contribute to Hexabot](https://github.com/Hexastack/Hexabot/blob/main/CONTRIBUTING.md)
 
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./CODE_OF_CONDUCT.md)
