@@ -15,29 +15,29 @@ Not familiar with [Hexabot](https://hexabot.ai/) ? It's an open-source chatbot /
 
 - **Dockerfile**: Use this file to build a Docker image on top of Hexabot. It's pre-configured to get your project up and running in a containerized environment.
 
-- **docker-compose.yml**: This file defines the services needed to run your Hexabot project using Docker Compose. It simplifies the setup of multiple services such as databases or other dependencies.
+- **docker/docker-compose.yml**: This file defines the services needed to run your Hexabot project using Docker Compose. It simplifies the setup of multiple services such as databases or other dependencies.
 
 ## Getting Started
 
-1. **Configure Your Environment**:
-   - Copy the `.env.example` file to `.env` and customize it according to your environment and configuration needs.
-
-   ```bash
-   cp .env.example .env
-   ```
-
-2. **Install Hexabot CLI**:
+1. **Install Hexabot CLI**:
    To create a new Hexabot project, first install the Hexabot CLI globally:
 
    ```bash
    npm install -g hexabot-cli
    ```
 
-3. **Create Your Project**:
+2. **Create Your Project**:
    Use the Hexabot CLI to create a new chatbot project:
 
    ```bash
    hexabot create my-chatbot
+   ```
+
+3. **Configure Your Environment**:
+   - Copy the `.env.example` file to `.env` and customize it according to your environment and configuration needs.
+
+   ```bash
+   cp .env.example .env
    ```
 
 4. **Run the Project**:
