@@ -9,10 +9,10 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "hexabot": "^2.1.5",
+    "hexabot": "^2.1.6",
     "@nestjs/common": "^10.0.0",
-    "hexabot-helper-ollama": "^2.1.1",
-    "hexabot-plugin-ollama": "^2.0.3"
+    "hexabot-helper-ollama": "^2.1.2",
+    "hexabot-plugin-ollama": "^2.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
