@@ -7,6 +7,7 @@ Not familiar with [Hexabot](https://hexabot.ai/) ? It's an open-source chatbot /
 ## Project Structure
 
 - **extensions/**: This folder is where you can develop your own extensions for Hexabot. Inside, you'll find subfolders for:
+
   - **channels/**: Add new messaging channels.
   - **helpers/**: Add helper functions or utilities.
   - **plugins/**: Create plugins to create custom blocks in the visual editor. Plugins is where you can perform text-to-action and integrate with 3rd party APIs. To get started, there is a `hello` plugin provided as an example.
@@ -34,6 +35,7 @@ Not familiar with [Hexabot](https://hexabot.ai/) ? It's an open-source chatbot /
    ```
 
 3. **Configure Your Environment**:
+
    - Copy the `.env.example` file to `.env` and customize it according to your environment and configuration needs.
 
    ```bash
@@ -48,11 +50,21 @@ Not familiar with [Hexabot](https://hexabot.ai/) ? It's an open-source chatbot /
    ```
 
    For production mode, you can use:
+
    ```bash
    hexabot start
    ```
 
-   *Note*: The first run may take some time as it needs to download all required Docker images.
+   _Note_: The first run may take some time as it needs to download all required Docker images.
+
+5. **Configure your NLU Engine**:
+   After creating your new project, the **Hexabot LLM-NLU Engine** will be enabled by default. This NLU engine relies on one of the following LLM helpers being present, you can enable one of these by following the steps detailed in [LLM NLU Engine](https://docs.hexabot.ai/user-guide/nlu/nlu-engines/llm-nlu-engine) documentation page:
+
+   - Ollama Helper (`hexabot-helper-ollama`)
+   - Google Gemini Helper (`hexabot-helper-gemini`)
+   - OpenAI ChatGPT Helper (`hexabot-helper-chatgpt`)
+
+   You must follow the instructions of the selected LLM helper in their specific documentation before starting the project.
 
 ## Built-in Features
 
@@ -64,6 +76,7 @@ Not familiar with [Hexabot](https://hexabot.ai/) ? It's an open-source chatbot /
 You can easily extend Hexabot's functionality by installing additional extensions (channels, helpers, plugins) via npm. Below are some examples:
 
 - Install a new channel (e.g., Messenger):
+
   ```bash
   npm install hexabot-channel-messenger
   ```
@@ -90,7 +103,6 @@ We welcome contributions from the community! Whether you want to report a bug, s
 
 Please refer to our contribution policy first : [How to contribute to Hexabot](https://github.com/Hexastack/Hexabot/blob/main/CONTRIBUTING.md)
 
-
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./CODE_OF_CONDUCT.md)
 
 Feel free to join us on [Discord](https://discord.gg/rNb9t2MFkG)
@@ -101,7 +113,6 @@ This software is licensed under the GNU Affero General Public License v3.0 (AGPL
 
 1. The name "Hexabot" is a trademark of Hexastack. You may not use this name in derivative works without express written permission.
 2. All derivative works must include clear attribution to the original creator and software, Hexastack and Hexabot, in a prominent location (e.g., in the software's "About" section, documentation, and README file).
-
 
 ---
 
