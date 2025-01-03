@@ -14,7 +14,7 @@
     "hexabot-helper-chatgpt": "^2.1.1",
     "hexabot-helper-gemini": "^2.1.3",
     "hexabot-helper-ollama": "^2.1.2",
-    "hexabot-helper-tensorflow": "^2.0.1",
+    "hexabot-helper-tensorflow": "^2.0.2",
     "hexabot-plugin-ollama": "^2.1.0"
   },
   "devDependencies": {
