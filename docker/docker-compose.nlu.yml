@@ -8,7 +8,10 @@ services:
 
   nlu-api:
     container_name: nlu-api
-    image: hexastack/hexabot-nlu:latest
+    # image: hexastack/hexabot-nlu:latest
+    build:
+      context: ./tensorflow-nlu
+      dockerfile: Dockerfile
     env_file: .env
     networks:
       - nlu-network
