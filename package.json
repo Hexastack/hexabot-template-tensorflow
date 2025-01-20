@@ -8,6 +8,9 @@
     "lint:fix": "eslint \"{extensions,modules}/**/*.ts\" --fix",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.{js,ts}": "eslint --fix -c \".eslintrc-staged.js\""
+  },
   "dependencies": {
     "hexabot": "^2.1.6",
     "@nestjs/common": "^10.0.0",
@@ -25,9 +28,10 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-import-resolver-typescript": "~3.6.1",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-license-header": "^0.6.1",
+    "eslint-plugin-header": "^3.1.1",
     "eslint-plugin-prettier": "^5.0.0",
     "husky": "^9.0.11",
+    "lint-staged": "^15.4.1",
     "prettier": "^3.0.0"
   }
 }
