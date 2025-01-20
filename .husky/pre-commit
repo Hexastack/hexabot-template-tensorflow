@@ -15,7 +15,7 @@ run_checks() {
     if [ -n "$changes" ]; then
         echo "${BLUE}Running ${path} checks and tests...${NC}"
         cd ./${path} 
-        npm run lint
+        npx lint-staged
         cd - > /dev/null
     else
         echo "${YELLOW}No changes detected in ${path}, skipping checks and tests.${NC}"
