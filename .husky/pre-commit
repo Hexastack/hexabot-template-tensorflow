@@ -14,7 +14,6 @@ run_checks() {
     local changes=$(git diff --cached --name-only | grep "^${path}/" || true)
     if [ -n "$changes" ]; then
         echo "${BLUE}Running ${path} checks and tests...${NC}"
-        cd ./${path} 
         npx lint-staged
         cd - > /dev/null
     else
