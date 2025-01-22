@@ -11,7 +11,7 @@
   "dependencies": {
     "@nestjs/common": "^10.0.0",
     "hexabot": "^2.2.1",
-    "hexabot-helper-chatgpt": "^2.2.1",
+    "hexabot-helper-chatgpt": "^2.2.2",
     "hexabot-helper-gemini": "^2.2.0",
     "hexabot-helper-ollama": "^2.2.1",
     "hexabot-plugin-ollama": "^2.2.1"
