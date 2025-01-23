@@ -15,7 +15,7 @@ COPY --from=base /app ./
 COPY package.json ./package.extra.json
 
 # Step 3: Install dependencies for both Hexabot API and new project
-RUN npm ci
+RUN npm i --package-lock
 
 # Step 4: Copy extra source files
 COPY ./modules ./src/extra
@@ -37,7 +37,7 @@ COPY package.json ./package.extra.json
 RUN node add-extra-deps.js
 
 # Step 3: Install all dependencies
-RUN npm install
+RUN npm install --package-lock
 
 # Step 4: Copy all source files
 COPY ./modules ./src/extra
@@ -63,7 +63,7 @@ RUN node add-extra-deps.js
 COPY --from=builder /app/patches ./patches
 
 # Step 9: Install only production dependencies
-RUN npm ci --only=production
+RUN npm i --package-lock --only=production
 
 # Step 10: Copy the built application from builder
 COPY --from=builder /app/dist ./dist
