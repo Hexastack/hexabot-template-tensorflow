@@ -6,7 +6,8 @@
     "format": "prettier --write \"extensions/**/*.ts\" \"modules/**/*.ts\"",
     "lint": "eslint \"{extensions,modules}/**/*.ts\"",
     "lint:fix": "eslint \"{extensions,modules}/**/*.ts\" --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
     "*.{js,ts}": "eslint --fix -c \".eslintrc-staged.js\""
